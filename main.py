@@ -1,5 +1,6 @@
 import requests
 import lxml
+import tqdm as tqdm
 from bs4 import BeautifulSoup
 import os
 import json
@@ -10,9 +11,9 @@ def get_url(url):
         "accept": "*/*",
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.124 YaBrowser/22.9.3.886 Yowser/2.5 Safari/537.36"
     }
-    # req = requests.get(url=url, headers=headers )
-    # with open("all_posts.html", "w", encoding="utf8") as file:
-    #     file.write(req.text)
+    req = requests.get(url=url, headers=headers )
+    with open("all_posts.html", "w", encoding="utf8") as file:
+        file.write(req.text)
 
     with open("all_posts.html", encoding="utf8") as file:
         src = file.read()
