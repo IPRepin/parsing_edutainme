@@ -28,7 +28,7 @@ def get_url(url):
             post_urls.append(post_url)
     # print(post_urls)
 
-    for post_url in post_urls:
+    for post_url in post_urls[0:1]:
         req = requests.get(post_url, headers)
         post_name = post_url.split("/")[-1]
 
@@ -39,6 +39,19 @@ def get_url(url):
             src = file.read()
 
         soup = BeautifulSoup(src, "lxml")
+        post_data = soup.find("div", class_="l-entry__header l-island-a")
+        try:
+            title = soup.find("h1").text
+        except Exception:
+            title = "Пост не имеет названия"
+
+        entry_content = soup.find("div", class_="l-entry__content")
+        post_content = soup.find("div", class_="content content--full ")
+        post_text = soup.find("div", class_="l-island-a")
+        print(post_text)
+
+
+
 
 
 
