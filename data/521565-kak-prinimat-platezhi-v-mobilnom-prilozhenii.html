@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<!--
+
+
+/╲/\[☉﹏☉]/\╱\ <-- Паук! Ааа! 🕷️
+
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        
+        <title>Как принимать платежи в мобильном приложении? — CloudPayments на vc.ru</title>
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+        
+                    <!-- Mobile App Banner -->
+            <meta name="apple-itunes-app" content="app-id=920638420, app-argument=vcru://index">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext,latin-ext">
+
+        <!-- Meta -->
+        <meta property="twitter:card" content="summary_large_image" />
+<meta property="og:site_name" content="vc.ru" />
+<meta property="fb:app_id" content="499950920109990" />
+<meta property="vk:image" content="https://vc.ru/cover/vk/c/521565/1666077932/cover.jpg" />
+<meta property="twitter:image" content="https://vc.ru/cover/tw/c/521565/1666077932/cover.jpg" />
+<meta property="og:image" content="https://vc.ru/cover/fb/c/521565/1666077932/cover.jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:title" content="Как принимать платежи в мобильном приложении? — CloudPayments на vc.ru" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Сегодня многие компании разрабатывают собственные приложения для смартфонов. Если речь идет о бизнесе, который продает товары или услуги, то часто возникает вопрос – как принимать оплату в мобильном приложении? О том, как все устроено, рассказываем ниже." />
+<meta name="description" content="Сегодня многие компании разрабатывают собственные приложения для смартфонов. Если речь идет о бизнесе, который продает товары или услуги, то часто возникает вопрос – как принимать оплату в мобильном приложении? О том, как все устроено, рассказываем ниже." />
+<meta property="og:url" content="https://vc.ru/cloudpayments/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii" />
+<link rel="canonical" href="https://vc.ru/cloudpayments/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii">
+<meta name="author" content="CloudPayments" />
+<meta property="article:author" content="https://www.facebook.com/vcrumedia/" />
+<meta property="article:publisher" content="https://www.facebook.com/vcrumedia/" />
+<meta property="article:published_time" content="2022-10-18T10:01:10+03:00" />
+<link rel="image_src" href="https://vc.ru/cover/fb/c/521565/1666077932/cover.jpg">
+
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Header color -->
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="https://vc.ru/static/build/vc.ru/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="https://vc.ru/static/build/vc.ru/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" href="https://vc.ru/static/build/vc.ru/favicons/apple-touch-icon-180x180.png">
+        <link rel="mask-icon" href="https://vc.ru/static/build/vc.ru/favicons/safari-pinned-tab.svg" color="#E25A76">
+
+        
+        <link rel="stylesheet" href="https://vc.ru/static/build/vc.ru/main.ab5138b8.min.css">
+
+        <link rel="manifest" href="/static/build/vc.ru/json/gcm-manifest.json">
+
+        <meta name="msapplication-tile-image" content="https://vc.ru/static/build/vc.ru/favicons/mstile-150x150.png">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#FEEBEF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#FEEBEF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FEEBEF">
+
+                        <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NDH47H');
+    </script>
+        
+        <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "vc.ru",
+        "url": "https://vc.ru/",
+        "logo": "https://vc.ru/static/build/vc.ru/images/search_logo.png",
+        "sameAs":
+            
+            [
+    "https:\/\/vk.com\/vcru",
+    "https:\/\/facebook.com\/vcrumedia",
+    "https:\/\/twitter.com\/vcru",
+    "https:\/\/telegram.me\/vcnews",
+    "https:\/\/plus.google.com\/+Siliconruscom",
+    "https:\/\/www.youtube.com\/channel\/UCv6mjnLGHyfiLWHnBA9c8xg",
+    "\/rss\/all"
+]    }
+</script>
+
+        <!-- Google AdSense verification for RTB -->
+            </head>
+
+    
+    <body class="app app--content-entry app--left-column-on app--right-column-off app--propaganda-off app--livestream-off app--content-sidebar-align-right app--right-column-reserve-on app--live-auto" data-country-code="FI" data-one-name="body">
+        <script>
+            /**
+             * Dealing with adblock class:
+             */
+
+            function getCookie(name) {
+              return (name = (document.cookie + ';').match(new RegExp(name + '=.*;'))) && name[0].split(/=|;/)[1];
+            }
+
+            if (getCookie('adblock-state') == 1) {
+                document.body.classList.add('app--ad-blocked');
+            } else {
+                document.body.classList.add('app--ad-allowed');
+            }
+        </script>
+
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDH47H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        
+        <!-- Adfox "D 100%x150 / 100%х250" format -->
+        
+<div class="propaganda" data-id="1"></div>
+
+        
+<div class="site-header-container">
+    <vue name="site-header">
+        <textarea hidden class="l-hidden">
+            {"isRegardCpuComplete":false,"hasAccess":false}        </textarea>
+    </vue>
+</div>
+
+        <!-- Adfox "M 1200x400/600" format -->
+        
+<div class="propaganda" data-id="2"></div>
+
+        
+<div class="propaganda" data-id="17"></div>
+
+        
+<div class="propaganda" data-id="18"></div>
+
+        <div class="updown" air-module="module.updown" air-click="updown" air-dom="updown">
+            <div class="updown__icons">
+                
+                    <svg class="icon icon--ui_arrow_up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#ui_arrow_up"></use></svg>
+                
+                    <svg class="icon icon--ui_arrow_up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#ui_arrow_up"></use></svg>
+                
+                    <svg class="icon icon--ui_arrow_up" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#ui_arrow_up"></use></svg>
+                            </div>
+        </div>
+
+        <div class="main layout">
+
+            <div class="layout__left-column layout__sticky">
+                <vue name="sidebar"></vue>
+                <div class="sidebar__tint"></div>
+            </div>
+
+            <div class="layout__content l-relative">
+
+                <!-- Adfox branding -->
+                <div id="adfox-branding-shifter"></div>
+                <div id="adfox-branding" class="lm-hidden"></div>
+                
+<div class="propaganda" data-id="4"></div>
+
+                <div id="page_wrapper">
+
+                    
+
+<!-- Render special in the entry top -->
+
+<!-- Native support banner -->
+
+<!-- #мегафон_какэтоработает branding -->
+
+
+<!-- Native branding from subsite settings -->
+
+<!-- Special Igrozhur -->
+
+<div class="page page--entry">
+    
+    <!-- Microdata for search engines -->
+    
+<script type="application/ld+json">
+  {"@context":"http:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":{"@type":"ListItem","position":1,"item":{"@id":"\/\/vc.ru\/cloudpayments","name":"CloudPayments"}}},{"@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/vc.ru\/cloudpayments\/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii"},"@id":521565,"headline":"\u041a\u0430\u043a \u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u044c \u043f\u043b\u0430\u0442\u0435\u0436\u0438 \u0432 \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u043c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438?","image":{"@type":"ImageObject","url":"https:\/\/vc.ru\/cover\/fb\/c\/521565\/1666077932\/cover.jpg","width":1200,"height":630},"datePublished":"2022-10-18T10:01:10+03:00","dateModified":"2022-10-18T10:25:32+03:00","text":"\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u043c\u043d\u043e\u0433\u0438\u0435 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u044e\u0442 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d\u043e\u0432. \u0415\u0441\u043b\u0438 \u0440\u0435\u0447\u044c \u0438\u0434\u0435\u0442 \u043e \u0431\u0438\u0437\u043d\u0435\u0441\u0435, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043f\u0440\u043e\u0434\u0430\u0435\u0442 \u0442\u043e\u0432\u0430\u0440\u044b \u0438\u043b\u0438 \u0443\u0441\u043b\u0443\u0433\u0438, \u0442\u043e \u0447\u0430\u0441\u0442\u043e \u0432\u043e\u0437\u043d\u0438\u043a\u0430\u0435\u0442 \u0432\u043e\u043f\u0440\u043e\u0441 \u2013 \u043a\u0430\u043a \u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u044c \u043e\u043f\u043b\u0430\u0442\u0443 \u0432 \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u043c \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438? \u041e \u0442\u043e\u043c, \u043a\u0430\u043a \u0432\u0441\u0435 \u0443\u0441\u0442\u0440\u043e\u0435\u043d\u043e, \u0440\u0430\u0441\u0441\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u043c \u043d\u0438\u0436\u0435.","author":[{"@type":"Person","name":"CloudPayments 762431"}],"publisher":{"@type":"Organization","name":"vc.ru","logo":{"@type":"ImageObject","url":"https:\/\/vc.ru\/static\/build\/vc.ru\/images\/amp_logo.png","width":60,"height":60}},"about":[{"@type":"Event","name":"ArticleUGC"}],"url":"https:\/\/vc.ru\/cloudpayments\/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii"}]}
+</script>
+
+    
+
+    <!-- Custom css from subsite settings -->
+    
+
+    <div class="l-entry  l-island-bg l-island-round lm-pt-16 l-pt-24 l-pb-30 " air-module="module.entry" data-content-id="521565" air-entry-type="full">
+
+        <!-- Применить версию из истории статьи -->
+        
+                    <div class="l-entry__header l-island-a">
+                
+
+<div class="
+content-header
+"
+>
+
+    <div class="content-header__info">
+        
+                <a class="content-header-author content-header-author--subsite content-header__item" href="https://vc.ru/cloudpayments">
+            <div class="content-header-author__avatar">
+                
+<img
+    class="andropov_image "
+    air-module="module.andropov"
+    data-andropov-type="image"
+    data-image-src="https://leonardo.osnova.io/a38be38f-1931-5720-89ed-13e21e011f95/"
+    data-image-name=""
+            style=";background-color: #061f1b;"            src="data:image/gif;base64,R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw=="/>            </div>
+
+            <div class="content-header-author__name">
+                CloudPayments            </div>
+
+                            <div class="content-header-author__approved">
+                    
+<span class="approved_user" title="Официальная страница">
+    <svg class="icon icon--ui_verified" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#ui_verified"></use></svg></span>
+                </div>
+                    </a>
+
+                
+                <div class="content-header__item content-header-number">
+                            <span class="lm-hidden">
+                    <time class="time" air-module="module.date" data-date="1666076470" data-type="default" title="18.10.2022 10:01:10 (Europe/Moscow)">3&nbsp;часа&nbsp;назад</time>                </span>
+                <span class="l-hidden lm-inline">
+                    <time class="time" air-module="module.date" data-date="1666076470" data-type="medium" title="18.10.2022 10:01:10 (Europe/Moscow)">3&nbsp;часа</time>                </span>
+                    </div>
+    </div>
+
+    <div class="content-header__spacer"></div>
+
+        
+        
+        </div>
+
+
+    <h1 class="content-title" itemprop="headline">
+                    Как принимать платежи в мобильном приложении?            </h1>
+            </div>
+        
+        <div class="l-entry__content">
+
+            <div data-io-article-url="https://vc.ru/cloudpayments/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii">
+
+                
+<div class="content content--full ">
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Сегодня многие компании разрабатывают собственные приложения для смартфонов. Если речь идет о бизнесе, который продает товары или услуги, то часто возникает вопрос – как принимать оплату в мобильном приложении? О том, как все устроено, рассказываем ниже.</p>
+    </div>
+
+        
+        
+            
+            
+                
+<div class="content-info content-info--full l-island-a">
+    
+                            <div class="content-info__item">
+                
+<vue name="comments-counter">
+    <textarea hidden class="l-hidden">
+        {&quot;id&quot;:521565,&quot;type&quot;:&quot;num&quot;,&quot;link&quot;:&quot;https:\/\/vc.ru\/cloudpayments\/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii&quot;,&quot;gtm&quot;:&quot;&quot;,&quot;prevCount&quot;:null,&quot;count&quot;:2,&quot;isAuthorized&quot;:false}    </textarea>
+</vue>
+            </div>
+        
+                            <div class="content-info__item">
+                
+<vue name="bookmark">
+    <textarea hidden class="l-hidden">
+        {&quot;id&quot;:521565,&quot;type&quot;:1,&quot;typeStr&quot;:&quot;content&quot;,&quot;showTitle&quot;:false,&quot;initialState&quot;:{&quot;isActive&quot;:false},&quot;gtm&quot;:&quot;&quot;}    </textarea>
+</vue>
+            </div>
+        
+                <div class="content-info__item lm-hidden">
+            
+<!--googleoff: all-->
+<!--noindex-->
+
+<vue name="layout-shares">
+    <textarea hidden>
+        {"id":521565,"gtm":null}    </textarea>
+</vue>
+
+<!--/noindex-->
+<!--googleon: all-->
+        </div>
+
+
+    
+                <div class="content-info__item content-info__item--right">
+            
+<div
+    class="views"
+
+    
+        air-module="module.entryViews"
+
+    
+    data-content-id="521565"
+    data-value="435"
+    data-compact=""
+>
+    
+    <span class="views__value">435</span>
+
+            <span class="views__label">просмотров</span>
+    </div>
+        </div>
+    
+        </div>
+
+            
+        
+            
+        
+        
+        
+            
+    
+<figure class="figure-image">
+    <style>
+        @media (min-width: 3106px) {
+            .content-image--6a5bc644-ab5b-5c78-8c3a-f124a26a156c {
+                --offset: 0px;
+            }
+        }
+    </style>
+
+    <div class="l-island-c">
+        <div class="content-image content-image--6a5bc644-ab5b-5c78-8c3a-f124a26a156c">
+            
+<div
+    class="andropov_image "
+    style="max-height: 1953px;max-width: 3105px;"
+    air-module="module.andropov"
+    data-andropov-type="image"
+    data-image-width="3105"
+    data-image-height="1953"
+    data-image-max-width="3105"    data-image-max-height="1953"            data-image-src="https://leonardo.osnova.io/6a5bc644-ab5b-5c78-8c3a-f124a26a156c/">
+
+    <div class="andropov_image__inner" style=";padding-bottom: 62.8970%;background: linear-gradient(90deg, #e3eaeb, #e2e5eb);"></div>
+</div>
+        </div>
+
+                    <div class="l-island-a">
+                <figcaption class="content-image-caption">
+                    Изображение CloudPayments                </figcaption>
+            </div>
+            </div>
+</figure>
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <h2>
+    <div class="l-island-a">
+        Разбираемся в терминах    </div>
+</h2>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Начиная гуглить способы приема платежей в приложении, вы неизбежно столкнетесь с терминами API и Mobile SDK, поэтому давайте разбираться.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p><b>API (Application Programming Interface)</b> – это совокупность инструментов, которые помогают использовать функции одного приложения внутри другого. </p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p><b>Mobile SDK (Software Development Kit)</b> – это набор готовых решений для разработки ПО под определенную платформу.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Оба инструмента используются для подключения платежной формы в приложении, однако Mobile SDK подразумевает упрощенный процесс интеграции.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <h2>
+    <div class="l-island-a">
+        Как подключить прием платежей в мобильном приложении?    </div>
+</h2>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Прежде, чем приступить к интеграции платежной формы в приложении, вам понадобится подключить интернет-эквайринг. Сделав это, вы получите доступ к личному кабинету, где сможете отслеживать все транзакции. О том, как подключить интернет-эквайринг, можете прочитать в одной из наших предыдущих <a href="https://vc.ru/cloudpayments/495981-chto-takoe-internet-ekvayring-i-kak-on-rabotaet" rel="nofollow noreferrer noopener" target="_blank">статей</a>.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+                                    <div class="l-island-a">
+                    
+<div class="propaganda" data-id="13"></div>
+                </div>
+                    
+        
+        
+            <div class="l-island-a">
+    
+        <p>Завершив процесс подключения эквайринга, можно приступать к работе над приложением. На этом этапе у вас будет два возможных пути:</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li><b>Провести подключение с помощью API</b></li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>На это потребуется больше времени для работы разработчиков и дизайнеров. Однако вы сможете персонализировать платежную форму и оформить ее в соответствии с айдентикой вашего бренда. </p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li><b>Интегрировать платежную форму с помощью Mobile SDK</b></li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Требует минимальных трудозатрат и времени на интеграцию, потому что вы можете воспользоваться уже готовыми библиотеками и не тратить время на отрисовку платежной формы. Мы все сделали за вас!</p>
+    </div>
+
+        
+        
+            
+            
+        
+                                
+        
+        
+        
+            <h2>
+    <div class="l-island-a">
+        Почему Mobile SDK удобнее и проще    </div>
+</h2>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Использование Mobile SDK подразумевает интеграцию нативной платежной формы внутри вашего приложения или использование своей формы. В отличие от интеграции с помощью API, на подключение приема платежей с помощью Mobile SDK требуется минимальное количество времени. Все, что от вас нужно, это подключить «библиотеку» в структуру приложения. На этом все, вопрос решен!</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>При подключении Mobile SDK от <a href="https://cloudpayments.ru/integration/sdk" rel="nofollow noreferrer noopener" target="_blank">CloudPayments</a>, клиент может воспользоваться стандартной платежной формой из-за чего процесс подключения становится максимально простым и происходит почти мгновенно. В то время, как использование API требует дополнительный материальных и временных ресурсов на работу разработчиков и отрисовку платежной формы дизайнерами. Поэтому процесс интеграции нередко затягивается элементарно из-за человеческого фактора.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <h2>
+    <div class="l-island-a">
+        Кому понадобится Mobile SDK    </div>
+</h2>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Наиболее актуальным подключение Mobile SDK будет для владельцев малого, среднего бизнеса или стартапов, которые хотят запуститься быстро без лишних заморочек.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <div class="l-island-a">
+    
+        <p>Позже по мере развития бизнеса или желания, вы можете обратиться к API и дополнительным возможностям сервиса: отрисовать собственную платежную форму, согласно айдентике вашей компании, или интегрировать дополнительные возможности платежного сервиса. Это может быть функция «безопасной сделки», рекуррентные платежи, рекарринг или технологию AFT (Account Funding Transaction), которая подойдет кредитным организациям и МФО.</p>
+    </div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+    
+<figure class="figure-image">
+    <style>
+        @media (min-width: 3106px) {
+            .content-image--551a2c03-451f-5ed4-b293-6704cae66b16 {
+                --offset: 0px;
+            }
+        }
+    </style>
+
+    <div class="l-island-c">
+        <div class="content-image content-image--551a2c03-451f-5ed4-b293-6704cae66b16">
+            
+<div
+    class="andropov_image "
+    style="max-height: 1953px;max-width: 3105px;"
+    air-module="module.andropov"
+    data-andropov-type="image"
+    data-image-width="3105"
+    data-image-height="1953"
+    data-image-max-width="3105"    data-image-max-height="1953"            data-image-src="https://leonardo.osnova.io/551a2c03-451f-5ed4-b293-6704cae66b16/">
+
+    <div class="andropov_image__inner" style=";padding-bottom: 62.8970%;background: linear-gradient(90deg, #e4ebeb, #e4e6ea);"></div>
+</div>
+        </div>
+
+                    <div class="l-island-a">
+                <figcaption class="content-image-caption">
+                    Изображение CloudPayments                </figcaption>
+            </div>
+            </div>
+</figure>
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            <h2>
+    <div class="l-island-a">
+        Как принимать платежи с помощью Mobile SDK    </div>
+</h2>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li>Клиент формирует заказ на товар или услугу;</li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li>При покупке выбирает любой удобный способ оплаты: банковской картой, Yandex Pay или СБП (также доступна оплата с помощью Apple Pay или Google Pay в странах СНГ);</li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li>Вы получаете уведомление об успешной транзакции в личном кабинете CloudPayments;</li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+            
+        
+        
+        
+            
+<div class="l-island-a">
+    <ul>
+
+        
+            <li>Выводите средства на свой счет или проводите необходимые денежные манипуляции – возврат или выплаты.</li>
+
+        
+    </ul>
+</div>
+
+        
+        
+            
+            
+        
+    
+    
+        
+        
+    
+    
+<!-- Podcasts on DTF -->
+
+</div>
+
+                                    
+<div class="content-footer content-footer--full l-island-a">
+                <div class="content-footer__item">
+            
+<vue name="comments-counter">
+    <textarea hidden class="l-hidden">
+        {&quot;id&quot;:521565,&quot;type&quot;:&quot;num&quot;,&quot;link&quot;:&quot;https:\/\/vc.ru\/cloudpayments\/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii&quot;,&quot;gtm&quot;:&quot;&quot;,&quot;prevCount&quot;:null,&quot;count&quot;:2,&quot;isAuthorized&quot;:false}    </textarea>
+</vue>
+        </div>
+    
+        <div class="content-footer__item content-footer__item--controls">
+        
+<vue name="layout-repost">
+    <textarea hidden>
+        {"contentId":521565,"count":0,"isReposted":false,"gtm":null}    </textarea>
+</vue>
+    </div>
+
+                <div class="content-footer__item">
+            
+<vue name="bookmark">
+    <textarea hidden class="l-hidden">
+        {&quot;id&quot;:521565,&quot;type&quot;:1,&quot;typeStr&quot;:&quot;content&quot;,&quot;showTitle&quot;:false,&quot;initialState&quot;:{&quot;isActive&quot;:false},&quot;gtm&quot;:&quot;Post \u2014 Add To Favorites \u2014 Click&quot;}    </textarea>
+</vue>
+        </div>
+    
+        <div class="content-footer__item content-footer__item--share lm-hidden">
+        
+<!--googleoff: all-->
+<!--noindex-->
+
+<vue name="layout-shares">
+    <textarea hidden>
+        {"id":521565,"gtm":null}    </textarea>
+</vue>
+
+<!--/noindex-->
+<!--googleon: all-->
+    </div>
+
+        
+        <div class="content-footer__item content-footer__item--right">
+            
+            
+<vue name="vote">
+    <textarea hidden class="l-hidden">
+        {&quot;voteData&quot;:{&quot;id&quot;:521565,&quot;type&quot;:1,&quot;typeStr&quot;:&quot;content&quot;,&quot;state&quot;:0,&quot;withUsers&quot;:1,&quot;contentId&quot;:521565,&quot;subsite&quot;:{&quot;id&quot;:762431,&quot;name&quot;:&quot;CloudPayments&quot;,&quot;avatar&quot;:&quot;https:\/\/leonardo.osnova.io\/a38be38f-1931-5720-89ed-13e21e011f95\/&quot;,&quot;url&quot;:&quot;https:\/\/vc.ru\/cloudpayments&quot;,&quot;type&quot;:1},&quot;place&quot;:&quot;content&quot;,&quot;isHidden&quot;:false,&quot;count&quot;:9,&quot;gtm&quot;:&quot;Post&quot;}}    </textarea>
+</vue>
+        </div>
+
+    </div>
+                
+            </div>
+
+        </div>
+
+        <div class="l-hidden entry_data"
+             data-article-info='{
+                "author_name": "CloudPayments",
+                "author_type": "self",
+                "tags": [],
+                "comments": 2,
+                "likes": 9,
+                "favorites": 19,
+                "is_advertisement": false,
+                "subsite_label": "cloudpayments",
+                "id": 521565,
+                "is_wide": true,
+                "is_ugc": true,
+                "date": "Tue, 18 Oct 2022 10:01:10 +0300",
+                "is_special": false            }'>
+        </div>
+
+                
+<div class="subsite-card-entry">
+    <div class="l-island-a">
+        
+<vue class="subsite-card subsite-card--loading" name="subsite-card">
+    <textarea hidden class="l-hidden">
+        {&quot;id&quot;:762431,&quot;url&quot;:&quot;https:\/\/vc.ru\/cloudpayments&quot;,&quot;name&quot;:&quot;CloudPayments&quot;,&quot;avatar&quot;:&quot;a38be38f-1931-5720-89ed-13e21e011f95&quot;,&quot;karma&quot;:null,&quot;description&quot;:&quot;\u041f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u0431\u0438\u0437\u043d\u0435\u0441\u0443 \u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u044c \u043e\u043d\u043b\u0430\u0439\u043d-\u043f\u043b\u0430\u0442\u0435\u0436\u0438.&quot;,&quot;isMe&quot;:false,&quot;isPlus&quot;:false,&quot;isVerified&quot;:true,&quot;isSubscribed&quot;:false,&quot;isNotificationsEnabled&quot;:false,&quot;isShowMessengerButton&quot;:false,&quot;isShowSubscribe&quot;:true}    </textarea>
+</vue>
+    </div>
+</div>
+
+    </div>
+
+            <!-- #мегафон_какэтоработает branding -->
+        
+        <!-- #ДРМ_конкурс branding article footer-->
+        
+        <!-- #vcru_spotify branding -->
+        
+                
+        <!-- Native article footer html from subsite settings -->
+        
+    
+            
+        <!-- Adfox "1020х200 aka 1180х250_Interpool_баннер над комментариями_Desktop" format -->
+        
+<div class="propaganda" data-id="6"></div>
+
+        <!-- Adfox "Article Footer 100%_desktop_mobile" format -->
+        
+<div class="propaganda" data-id="7"></div>
+
+        
+        <!-- Render special in the entry above comments -->
+        
+        
+            <!-- Comments -->
+            <div class="l-island-bg l-island-round l-pv-32 lm-pv-20 lm-mt-20 l-mt-28">
+
+                
+<!-- *--* --- -- --- --* ** - *    ---- ** *-* *-*- * *--    --** *- *** - *- *-- *-** *-*- * -    *--* * *-* * -** * *-** -*-- *-- *- - -**-    -*- --- -- -- * -* - -*-- -->
+<div class="comments " air-module="module.comments" data-analytics="Comments" data-analytics-events="show">
+
+    <div class="comments_updates_rail">
+
+        <div class="comments_updates_rail__inner">
+
+            <div class="comments_updates comments_updates--zero t-no_select" data-gtm="Comments — Updates — Click">
+
+                <svg class="icon icon--updates_arrows" width="27" height="19" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#updates_arrows"></use></svg>
+                <span class="comments_updates__counter">0</span>
+
+            </div>
+
+        </div>
+    </div>
+        <textarea air-settings>
+        {
+            "id": 521565,
+            "author_id": 762431,
+            "diff_limit": 1000,
+            "urls": {"diff":"\/comments\/521565\/get","add":"\/comments\/521565\/add","edit":"\/comments\/edit","remove":"\/admin\/comments\/remove","pin":"\/admin\/comments\/pin","get4edit":"\/comments\/get4edit","complain":"\/comments\/complain","load_more":"\/comments\/loading\/521565"},
+            "attach_limit": 2,
+            "max_comment_text_length": 5000,
+            "subsite_id": 762431,
+            "last_count_and_date": null,
+            "is_enabled_donates": false,
+            "rolled_up": false,
+            "rolled_up_limit": 7,
+            "subscription_state": -1        }
+    </textarea>
+
+    <div class="comments__body" style="z-index: 6">
+        <div class="comments-header l-island-a">
+                        <div class="comments-header__title comments__title" data-count="2">
+                2&nbsp;комментария            </div>
+
+            <div class="comments-header__actions">
+                                
+                                <div
+                    class="comments-header__action comments-header__action--bell "
+                    data-titles="Подписаться на комментарии|Отписаться от комментариев"
+                    title="Подписаться на комментарии"
+                    air-click="commentsActionToggleSubscribe"
+                >
+                    <svg class="icon icon--v_bell" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_bell"></use></svg>                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        <div class="comments__content_wrapper comments__content_wrapper--open" data-one-name="wrapper_0157d10f69">
+            <div class="comments__content_wrapper__container">
+                <div class="comments__content l-island-a">
+<div
+    class="comment comment--with-no-replies"
+    data-id="5048086"
+    data-date="1666080803"
+    data-reply_to="0"
+    data-rating="2.4860188942222"
+    data-user_id="391079"
+    data-thread-id="3ebd82ca"
+    data-level="1"
+    data-display-level="1"
+    data-is-max-level="0"
+    data-has-pre-max-level="0"
+    data-has-max-level="0"
+    data-donate="0"
+    data-replies-to-load="0"
+    data-is-pinned="0"
+    style="--level: 1;"
+>
+        <div class="comment__branches"></div>
+
+    <div class="comment__content">
+        
+                        <a                class="comment__avatar"
+
+                                    href="https://vc.ru/u/391079-alex-e"
+                            >
+                <div class="comment__avatar__image">
+                    
+<img
+    class="andropov_image "
+    air-module="module.andropov"
+    data-andropov-type="image"
+    data-image-src="https://leonardo.osnova.io/94bee31b-8cc4-eef2-bf96-8bf4a2ddcbb7/"
+    data-image-name=""
+            style=";background-color: #e4e4e4;"            src="data:image/gif;base64,R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw=="/>                </div>
+            </a>
+
+                        <a                class="comment__author"
+
+                                    href="https://vc.ru/u/391079-alex-e"
+                            >
+                Alex E            </a>
+
+                        
+                        
+                        
+                        <div
+                class="comment__icon comment__icon-action comment__copy-link"
+                air-click="copy_comment_link?id=5048086"
+                title="Скопировать ссылку"
+            >
+                <svg class="icon icon--v_link" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_link"></use></svg>            </div>
+
+            <div class="comment__break"></div>
+
+                        <a class="comment__detail" href="https://vc.ru/cloudpayments/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii?comment=5048086">
+                <time class="time" air-module="module.date" data-date="1666080803" data-type="medium" title="18.10.2022 11:13:23 (Europe/Moscow)">2&nbsp;часа</time>            </a>
+
+                        
+                        
+                                        <div class="comment__text">
+                    <p>Нужно испытать )) Актуальная штука</p>                </div>
+            
+                        
+                        
+                                        <div
+                    class="comment__action"
+                    air-click="place_form?to=item&id=5048086&mode=reply&level=1"
+                >
+                    Ответить                </div>
+            
+                                        <div
+                    class="comment__action"
+                    air-module="module.etc_controls"
+                    data-analytics-event-name="Comments — More — Click"
+                    data-permissions="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNvcHlfY29tbWVudF9saW5rIjpudWxsLCJjb21wbGFpbl9jb21tZW50IjowfSwiaWF0IjoxNjY2MDg5NDgxLCJleHAiOjE2NjYxNzU4ODF9.mG0gXBFdgH83GrfG338zB2sOhAqQfnvq1xLuUw5c1D8"
+                    data-type="4"
+                    data-content-id="521565"
+                    data-comment-id="5048086"
+                    data-user-id="391079"
+                    data-subsite-id="762431"
+                    data-ban-state="0"
+                    data-pin_comment-state="0"
+                    data-favorite_toggle-state=""
+                    data-author-is-user="1"
+                    data-level="1"
+                >
+                    <svg class="icon icon--v_etc" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_etc"></use></svg>                </div>
+            
+                                        
+<vue name="vote">
+    <textarea hidden class="l-hidden">
+        {&quot;voteData&quot;:{&quot;id&quot;:5048086,&quot;type&quot;:4,&quot;typeStr&quot;:&quot;comment&quot;,&quot;state&quot;:0,&quot;withUsers&quot;:1,&quot;contentId&quot;:521565,&quot;subsite&quot;:{&quot;id&quot;:762431,&quot;name&quot;:&quot;CloudPayments&quot;,&quot;avatar&quot;:&quot;https:\/\/leonardo.osnova.io\/a38be38f-1931-5720-89ed-13e21e011f95\/&quot;,&quot;url&quot;:&quot;https:\/\/vc.ru\/cloudpayments&quot;,&quot;type&quot;:1},&quot;place&quot;:&quot;content&quot;,&quot;isHidden&quot;:false,&quot;count&quot;:3,&quot;gtm&quot;:&quot;Comments&quot;}}    </textarea>
+</vue>
+            
+        
+        <div class="comment__break"></div>
+
+                
+                <div
+            class="comment__expand-branch comment__inline-action"
+            air-click="comments_expand_branch"
+            data-id="thread=3ebd82ca&parent=5048086"
+        >
+            Развернуть ветку
+        </div>
+
+                    </div>
+</div>
+
+
+
+<div
+    class="comment comment--with-no-replies"
+    data-id="5047941"
+    data-date="1666078790"
+    data-reply_to="0"
+    data-rating="0"
+    data-user_id="970896"
+    data-thread-id="37c7fa03"
+    data-level="1"
+    data-display-level="1"
+    data-is-max-level="0"
+    data-has-pre-max-level="0"
+    data-has-max-level="0"
+    data-donate="0"
+    data-replies-to-load="0"
+    data-is-pinned="0"
+    style="--level: 1;"
+>
+        <div class="comment__branches"></div>
+
+    <div class="comment__content">
+        
+                        <a                class="comment__avatar"
+
+                                    href="https://vc.ru/u/970896-svetlana-zavackaya"
+                            >
+                <div class="comment__avatar__image">
+                    
+<img
+    class="andropov_image "
+    air-module="module.andropov"
+    data-andropov-type="image"
+    data-image-src="https://leonardo.osnova.io/2f35ea45-019b-560d-941c-05c9e8fcaab6/"
+    data-image-name=""
+            style=";background-color: #393a2a;"            src="data:image/gif;base64,R0lGODlhAQABAJAAAP8AAAAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw=="/>                </div>
+            </a>
+
+                        <a                class="comment__author"
+
+                                    href="https://vc.ru/u/970896-svetlana-zavackaya"
+                            >
+                Светлана Завацкая            </a>
+
+                        
+                        
+                        
+                        <div
+                class="comment__icon comment__icon-action comment__copy-link"
+                air-click="copy_comment_link?id=5047941"
+                title="Скопировать ссылку"
+            >
+                <svg class="icon icon--v_link" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_link"></use></svg>            </div>
+
+            <div class="comment__break"></div>
+
+                        <a class="comment__detail" href="https://vc.ru/cloudpayments/521565-kak-prinimat-platezhi-v-mobilnom-prilozhenii?comment=5047941">
+                <time class="time" air-module="module.date" data-date="1666078790" data-type="medium" title="18.10.2022 10:39:50 (Europe/Moscow)">2&nbsp;часа</time>            </a>
+
+                        
+                        
+                                        <div class="comment__text">
+                    <p>Интересная информация, только я не совсем поняла, всю цепочку привязки.</p>                </div>
+            
+                        
+                        
+                                        <div
+                    class="comment__action"
+                    air-click="place_form?to=item&id=5047941&mode=reply&level=1"
+                >
+                    Ответить                </div>
+            
+                                        <div
+                    class="comment__action"
+                    air-module="module.etc_controls"
+                    data-analytics-event-name="Comments — More — Click"
+                    data-permissions="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNvcHlfY29tbWVudF9saW5rIjpudWxsLCJjb21wbGFpbl9jb21tZW50IjowfSwiaWF0IjoxNjY2MDg5NDgxLCJleHAiOjE2NjYxNzU4ODF9.mG0gXBFdgH83GrfG338zB2sOhAqQfnvq1xLuUw5c1D8"
+                    data-type="4"
+                    data-content-id="521565"
+                    data-comment-id="5047941"
+                    data-user-id="970896"
+                    data-subsite-id="762431"
+                    data-ban-state="0"
+                    data-pin_comment-state="0"
+                    data-favorite_toggle-state=""
+                    data-author-is-user="1"
+                    data-level="1"
+                >
+                    <svg class="icon icon--v_etc" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_etc"></use></svg>                </div>
+            
+                                        
+<vue name="vote">
+    <textarea hidden class="l-hidden">
+        {&quot;voteData&quot;:{&quot;id&quot;:5047941,&quot;type&quot;:4,&quot;typeStr&quot;:&quot;comment&quot;,&quot;state&quot;:0,&quot;withUsers&quot;:1,&quot;contentId&quot;:521565,&quot;subsite&quot;:{&quot;id&quot;:762431,&quot;name&quot;:&quot;CloudPayments&quot;,&quot;avatar&quot;:&quot;https:\/\/leonardo.osnova.io\/a38be38f-1931-5720-89ed-13e21e011f95\/&quot;,&quot;url&quot;:&quot;https:\/\/vc.ru\/cloudpayments&quot;,&quot;type&quot;:1},&quot;place&quot;:&quot;content&quot;,&quot;isHidden&quot;:false,&quot;count&quot;:0,&quot;gtm&quot;:&quot;Comments&quot;}}    </textarea>
+</vue>
+            
+        
+        <div class="comment__break"></div>
+
+                
+                <div
+            class="comment__expand-branch comment__inline-action"
+            air-click="comments_expand_branch"
+            data-id="thread=37c7fa03&parent=5047941"
+        >
+            Развернуть ветку
+        </div>
+
+                    </div>
+</div>
+
+</div>
+
+                
+                
+                <div class="comments__footer l-island-a">
+                    
+<div class="comments_pseudo_form " air-click="place_form?to=before_me" data-inversion="1">
+    
+        <div class="comments_pseudo_form__text">Написать комментарий...</div>
+
+        <div class="comments_pseudo_form__buttons">
+            <div class="comments_pseudo_form__button"><svg class="icon icon--v_image" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_image"></use></svg></div>
+            <div class="comments_pseudo_form__button comments_pseudo_form__button_gif"><svg class="icon icon--v_gif" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#v_gif"></use></svg></div>
+
+                    </div>
+
+    </div>
+
+                                            
+<div class="comment-writing" data-comments="writing">
+    <div class="comment-writing__branches">
+        <div
+            class="comment__branch"
+            air-hover="comments_highlight_branch"
+            air-leave="comments_unhighlight_branch"
+            air-click="comments_collapse_branch"
+            data-comments="branch"
+        ></div>
+    </div>
+
+    <div class="comment-writing__content">
+
+        <div class="comment-form" data-comments="form">
+            
+                <div class="comment-form__editor" data-comments="editor"></div>
+
+                    </div>
+
+    </div>
+</div>
+                                    </div>
+            </div>
+
+                        <div class="comments__content_wrapper__button l-pt-30">
+                <div class="ui-button ui-button--1" data-one-click="add_mod:wrapper_0157d10f69:open" data-gtm="Comments — Show All — Clicked">
+                    Читать все 2&nbsp;комментария                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+
+        
+                    
+            <div
+                class="lm-mt-20 l-mt-28 l-island-a recommendation-feed"
+                data-analytics="Recommendations"
+                data-clickhouse-analytics="{&quot;show&quot;:&quot;recommendations_viewed&quot;}"
+            >
+                <div class="feed"
+                    air-module="module.feed"
+                    data-feed-id="6a2a42fca1"
+                    data-feed-more-url="/recommended"
+                    data-feed-last-sorting-value="1"
+                    data-feed-last-id=""
+                    data-feed-exclude-ids=""
+                    data-feed-content-id="521565">
+
+                    <div class="feed__container">
+                    </div>
+
+                    <div class="feed__horizon l-pv-25 l-island-round" id="feed_horizon_6a2a42fca1">
+                        
+<span class="ui_preloader ">
+    <span class="ui_preloader__dot"></span>
+    <span class="ui_preloader__dot"></span>
+    <span class="ui_preloader__dot"></span>
+</span>
+                    </div>
+                </div>
+            </div>
+
+        
+    
+</div>
+
+                </div>
+
+            </div>
+
+            <div class="layout__right-column">
+                
+<div class="live" air-module="module.live"></div>
+            </div>
+        </div>
+
+        <vue name="mobile-site-footer">
+            <textarea hidden class="l-hidden">
+                {"isRegardCpuComplete":false,"hasAccess":false}            </textarea>
+        </vue>
+
+        <!-- Audio Player - temporary place & sons (established in August 2018) -->
+        <div class="floating_player floating_player--hidden"></div>
+
+                    <air module="module.propaganda">
+                <textarea air-settings>
+                    [{"id":1,"label":"Header, 100%x250: D","provider":"adfox","adaptive":["desktop"],"adfox_method":"createAdaptive","auto_reload":true,"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"ezfl"}},"distribution":"top-desktop"},{"id":2,"label":"Header, 1200x400\/600: M","provider":"adfox","adaptive":["phone"],"auto_reload":true,"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"ezfn"}},"distribution":"top-mobile"},{"id":4,"label":"Article Branding top","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"p1":"cfovx","p2":"glug"}}},{"id":5,"label":"300x600: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"ezfk"}},"distribution":"right-sidebar"},{"id":6,"label":"Above the Comments: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"pp":"h","ps":"bugf","p2":"ffyh"}},"distribution":"before-comments-desktop"},{"id":7,"label":"Above the Comments: M","provider":"adfox","adaptive":["tablet","phone"],"adfox":{"ownerId":228129,"params":{"p1":"bwkpg","p2":"fjxb"}},"distribution":"before-comments-mobile"},{"id":12,"label":"Topbar button: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"p1":"bscsh","p2":"fdhx"}}},{"id":13,"label":"In Article: M","provider":"adfox","adaptive":["phone"],"adfox":{"ownerId":228129,"params":{"pp":"h","ps":"bugf","p2":"flvn"}}},{"id":15,"label":"In-Feed Teaser: DM","provider":"adfox","adaptive":["desktop","tablet","phone"],"adfox":{"ownerId":228129,"params":{"p1":"byudx","p2":"ftjf"}}},{"id":16,"label":"Topbar button: M","provider":"adfox","adaptive":["tablet","phone"],"adfox":{"ownerId":228129,"params":{"p1":"byzqf","p2":"ftwx"}}},{"id":17,"label":"Stratum: D","provider":"adfox","adaptive":["desktop"],"auto_reload":true,"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"fzvb"}}},{"id":18,"label":"Stratum: M","provider":"adfox","adaptive":["tablet","phone"],"auto_reload":true,"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"fzvc"}}},{"id":19,"label":"Under the News Teaser: DM","provider":"adfox","adaptive":["desktop","tablet","phone"],"auto_reload":true,"adfox":{"ownerId":228129,"params":{"p1":"cbltd","p2":"gazs"}}},{"id":20,"label":"Leftbar button: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"p1":"cgxmr","p2":"gnwc"}}},{"id":21,"label":"Header Microteaser: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"gtjk"}}},{"id":23,"label":"In Article: D","provider":"adfox","adaptive":["desktop"],"adfox":{"ownerId":228129,"params":{"pp":"g","ps":"bugf","p2":"hiig"}}}]                </textarea>
+            </air>
+        
+                            <air module="module.hawk">
+                
+                <textarea air-settings>
+                    {"token":"eyJpbnRlZ3JhdGlvbklkIjoiYmFmNjQ4MmUtMmY3ZS00Mzg4LWEyZGYtMDJkYjk2ZmIzOWQwIiwic2VjcmV0IjoiMTFjNDMxZTMtNjRjNS00MWUxLTlmNjgtNTkzMTk1OGQ1NTZiIn0=","release":"ab5138b8"}                </textarea>
+            </air>
+        
+                <air module="module.liveStream">
+            <air-settings>
+                null            </air-settings>
+        </air>
+
+        
+        <script>
+            window.__delegated_data = {"module.page":{"navigation_name":"cloudpayments","sorting_name":"popular","is_content":true,"subsite":{"id":762431,"name":"CloudPayments","avatar":{"type":"image","data":{"uuid":"a38be38f-1931-5720-89ed-13e21e011f95","width":2000,"height":2000,"size":2622829,"type":"png","color":"061f1b","hash":"","external_service":[]}},"uri":"\/cloudpayments","url":"https:\/\/vc.ru\/cloudpayments"},"layout_options":{"content":"content-entry","leftColumn":"left-column-on","rightColumn":"right-column-off","propaganda":"propaganda-off","livestream":"livestream-off","contentSidebarAlign":"content-sidebar-align-right","rightColumnReserve":"right-column-reserve-on"}},"module.ajaxify":{"title":"Как принимать платежи в мобильном приложении? — CloudPayments на vc.ru"},"module.auth":{"subscribed_ids":[],"ignored_ids":[]},"module.sidebar":{"desktop":[{"name":"siteNavigation","type":"tree-list","options":{"caption":{"text":""},"limit":0,"items":[{"text":"Популярное","url":"\/popular","icon":"ui_sidebar_feed","gtm":"Menu — Popular Feed — Click"},{"text":"Свежее","url":"\/new","icon":"ui_sidebar_recent_big","gtm":"Menu — New Feed — Click"},{"text":"Компании","url":"\/companies","slug":"Companies","icon":"ui_sidebar_companies"},{"text":"Вакансии","url":"\/job","slug":"Vacancies","icon":"ui_sidebar_jobs"},{"text":"Мероприятия","url":"\/events","slug":"Events","icon":"ui_sidebar_events"},{"text":"Подписки","url":"\/subs","slug":"subscriptions","icon":"ui_sidebar_subscriptions"},{"text":"{<div class=\"propaganda\" data-id=\"20\"><\/div>}","url":""}],"gtm":["Sidebar","SiteNavigation"]}},{"name":"subscriptions","type":"tree-list","options":{"caption":{"text":""},"limit":5,"items":[{"text":"Личный опыт","url":"https:\/\/vc.ru\/life","id":199123,"image":{"type":"image","data":{"uuid":"68e0e807-2b43-55b9-9b76-b3f0f76f3d32","width":2400,"height":2400,"size":98919,"type":"jpg","color":"93dbd3","hash":"d0dc0c10303010","external_service":[]}},"favourite":false},{"text":"Маркетинг","url":"https:\/\/vc.ru\/marketing","id":199113,"image":{"type":"image","data":{"uuid":"d66009fe-9bf0-52da-bdbf-4c758eba39e7","width":2400,"height":2400,"size":841299,"type":"jpg","color":"f97373","hash":"0c1cf06cf0d010","external_service":[]}},"favourite":false},{"text":"Дизайн","url":"https:\/\/vc.ru\/design","id":199114,"image":{"type":"image","data":{"uuid":"81132c2d-ddb6-0127-19d6-e1d1293194b1","width":0,"height":0,"size":1,"type":"jpg","color":"","hash":"","external_service":[]}},"favourite":false},{"text":"Техника","url":"https:\/\/vc.ru\/tech","id":199117,"image":{"type":"image","data":{"uuid":"b5c6a2ee-a61f-581f-aa98-dcd3be79fd33","width":1200,"height":1200,"size":91068,"type":"png","color":"ebf37c","hash":"68684c44444400","external_service":[]}},"favourite":false},{"text":"Карьера","url":"https:\/\/vc.ru\/hr","id":199121,"image":{"type":"image","data":{"uuid":"7e34636c-3189-5ba0-a2b3-c1c9ee18b5ba","width":1200,"height":1200,"size":123655,"type":"png","color":"b55467","hash":"1c10103828607050","external_service":[]}},"favourite":false},{"text":"Трибуна","url":"https:\/\/vc.ru\/tribuna","id":199116,"image":{"type":"image","data":{"uuid":"04607ca7-338b-561e-9403-3f06a70ef789","width":1200,"height":1200,"size":78591,"type":"png","color":"ebfbe3","hash":"302828e8f0303030","external_service":[]}},"favourite":false}],"gtm":["Sidebar","Subscriptions"]}},{"name":"footer","type":"footer","options":{"links":{"ios":"https:\/\/itunes.apple.com\/ru\/app\/cukerberg-pozvonit-novosti\/id920638420","android":"https:\/\/play.google.com\/store\/apps\/details?id=ru.artrobot.siliconrus"},"sponsor":{"title":"Спонсоры vc.ru","href":"\/plus"}}}],"mobile":[{"name":"siteNavigation","type":"tree-list","options":{"caption":{"text":""},"limit":0,"items":[{"text":"Популярное","url":"\/popular","icon":"ui_sidebar_feed","gtm":"Menu — Popular Feed — Click"},{"text":"Свежее","url":"\/new","icon":"ui_sidebar_recent_big","gtm":"Menu — New Feed — Click"},{"text":"Компании","url":"\/companies","slug":"Companies","icon":"ui_sidebar_companies"},{"text":"Вакансии","url":"\/job","slug":"Vacancies","icon":"ui_sidebar_jobs"},{"text":"Мероприятия","url":"\/events","slug":"Events","icon":"ui_sidebar_events"},{"text":"Подписки","url":"\/subs","slug":"subscriptions","icon":"ui_sidebar_subscriptions"},{"text":"{<div class=\"propaganda\" data-id=\"20\"><\/div>}","url":""}],"gtm":["Sidebar","SiteNavigation"]}},{"name":"writeButton","type":"write-button","options":{"text":"Новая запись"}},{"name":"subscriptions","type":"tree-list","options":{"caption":{"text":""},"limit":5,"items":[{"text":"Личный опыт","url":"https:\/\/vc.ru\/life","id":199123,"image":{"type":"image","data":{"uuid":"68e0e807-2b43-55b9-9b76-b3f0f76f3d32","width":2400,"height":2400,"size":98919,"type":"jpg","color":"93dbd3","hash":"d0dc0c10303010","external_service":[]}},"favourite":false},{"text":"Маркетинг","url":"https:\/\/vc.ru\/marketing","id":199113,"image":{"type":"image","data":{"uuid":"d66009fe-9bf0-52da-bdbf-4c758eba39e7","width":2400,"height":2400,"size":841299,"type":"jpg","color":"f97373","hash":"0c1cf06cf0d010","external_service":[]}},"favourite":false},{"text":"Дизайн","url":"https:\/\/vc.ru\/design","id":199114,"image":{"type":"image","data":{"uuid":"81132c2d-ddb6-0127-19d6-e1d1293194b1","width":0,"height":0,"size":1,"type":"jpg","color":"","hash":"","external_service":[]}},"favourite":false},{"text":"Техника","url":"https:\/\/vc.ru\/tech","id":199117,"image":{"type":"image","data":{"uuid":"b5c6a2ee-a61f-581f-aa98-dcd3be79fd33","width":1200,"height":1200,"size":91068,"type":"png","color":"ebf37c","hash":"68684c44444400","external_service":[]}},"favourite":false},{"text":"Карьера","url":"https:\/\/vc.ru\/hr","id":199121,"image":{"type":"image","data":{"uuid":"7e34636c-3189-5ba0-a2b3-c1c9ee18b5ba","width":1200,"height":1200,"size":123655,"type":"png","color":"b55467","hash":"1c10103828607050","external_service":[]}},"favourite":false},{"text":"Трибуна","url":"https:\/\/vc.ru\/tribuna","id":199116,"image":{"type":"image","data":{"uuid":"04607ca7-338b-561e-9403-3f06a70ef789","width":1200,"height":1200,"size":78591,"type":"png","color":"ebfbe3","hash":"302828e8f0303030","external_service":[]}},"favourite":false}],"gtm":["Sidebar","Subscriptions"]}},{"name":"footer","type":"footer","options":{"links":{"ios":"https:\/\/itunes.apple.com\/ru\/app\/cukerberg-pozvonit-novosti\/id920638420","android":"https:\/\/play.google.com\/store\/apps\/details?id=ru.artrobot.siliconrus"},"sponsor":{"title":"Спонсоры vc.ru","href":"\/plus"}}}]}};
+            /**
+             * @deprecated              */
+            window.__codename = 'vc';
+            window.__apptitle = 'vc.ru';
+            /**
+             * @deprecated              */
+            window.__domain = 'vc.ru';
+            window.__apple_web_push_id = 'web.ru.vc.push';
+            window.__static_version = 'ab5138b8';
+            window.__specials_version = 'eeb6bd15';
+            window.__specials_cdn = 'https://specials-f378ef5.servicecdn.ru/';
+            window.__static_path = '/static/build/vc.ru';
+            window.__email_auth = true;
+            window.__email_registration = true;
+            window.__auth_cover_images = 'e09fd210-816b-01d6-728d-dbf1ad64e29c';
+            window.__auth_logo_width = 36;
+            window.__auth_logo_height = 34;
+            window.__auth_logo_color = '#ffffff';
+            window.__auth_buttons = ["email","vk","gg","fb","tw","apple"];
+            window.__debug = false;
+            window.__ad_site_name = 'vc.ru';
+            window.__is_app = false;
+            window.__global_modules = 'module.appDocumentResize, module.page, module.ajaxify, module.fingerprint, module.static_version_watcher, module.popup, module.misprint, module.pixels, module.buyClubAccount, module.universal_action, module.iframe_lazy_load, module.audio_controller, module.analytics, module.analytics_events, module.clickhouse_analytics, module.captcha, module.one, module.subsite_admin, module.sidebar, module.nativeAd, module.andropov, module.inputs, module.push2, module.radioButtons, module.checkboxes, module.evaluate_script, module.hawk, module.comments, module.instagram_frames, module.auth, module.subsitesTunePopup, module.newEntriesHorizon, module.boosterConstructor, module.actionsAnalytics, module.writing, module.scrollLocker, module.live, module.distribution, module.vueMate';
+            window.__dates_behavior = {"daily":{"[today]":"{time} \/\/ 3600","*":"{dayN}.{monthNN} \/\/ 0"},"full":{"[thisyear]":"{dayN} {monthShort} \u0432 {time} \/\/ 3600","*":"{dayN}.{monthNN}.{year} \u0432 {time} \/\/ 3600"},"[:59sec]":{"short":"\/\/ 30","medium":"\u0441\u0435\u0439\u0447\u0430\u0441 \/\/ 30","*":"\u0442\u043e\u043b\u044c\u043a\u043e \u0447\u0442\u043e \/\/ 30"},"[:119sec]":{"short":"{minDiff}\u043c \/\/ 30","medium":"{minDiff} \u043c\u0438\u043d \/\/ 30","*":"\u043c\u0438\u043d\u0443\u0442\u0443 \u043d\u0430\u0437\u0430\u0434 \/\/ 30"},"[:59.9min]":{"short":"{minDiff}\u043c \/\/ 60","medium":"{minDiff} \u043c\u0438\u043d \/\/ 60","*":"{minDiff} {minDiffWord} \u043d\u0430\u0437\u0430\u0434 \/\/ 60"},"[:119.9min]":{"short":"{hourDiff}\u0447 \/\/ 1800","medium":"{hourDiff} {hourDiffWord} \/\/ 60","*":"\u0447\u0430\u0441 \u043d\u0430\u0437\u0430\u0434 \/\/ 1800"},"medium":{"[:719min]":"{hourDiff} {hourDiffWord} \/\/ 60"},"[:4hour]":{"short":"{hourDiff}\u0447 \/\/ 1800","*":"{hourDiff} {hourDiffWord} \u043d\u0430\u0437\u0430\u0434 \/\/ 1800"},"[today]":{"short":"{time} \/\/ 3600","medium":"{time} \/\/ 3600","*":"\u0441\u0435\u0433\u043e\u0434\u043d\u044f \u0432 {time} \/\/ 3600"},"[yesterday]":{"short":"\u0432\u0447\u0435\u0440\u0430 \/\/ 3600","medium":"\u0432\u0447\u0435\u0440\u0430 \/\/ 3600","*":"\u0432\u0447\u0435\u0440\u0430 \u0432 {time} \/\/ 3600"},"[thisyear]":{"short":"{dayN} {monthShort} \/\/ 0","medium":"{dayN} {monthShort} \/\/ 0","*":"{dayN} {monthShort} \u0432 {time} \/\/ 3600"},"*":{"short":"{dayN}.{monthNN}.{year} \/\/ 0","medium":"{dayN}.{monthNN}.{year} \/\/ 0","*":"{dayN} {monthShort} {year} \/\/ 0"}};
+            window.__site_logo_size = [36, 50];
+            window.__bugsSubsiteId = parseInt('199133', 10);
+            window.__complain_reasons = ["","\u0421\u043f\u0430\u043c","\u041e\u0441\u043a\u043e\u0440\u0431\u043b\u0435\u043d\u0438\u0435","\u041d\u0430\u0440\u0443\u0448\u0435\u043d\u0438\u0435 \u0437\u0430\u043a\u043e\u043d\u0430","\u041f\u043e\u0440\u043d\u043e\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u043e\u043d\u0442\u0435\u043d\u0442","\u041d\u0430\u0441\u0438\u043b\u0438\u0435","\u0410\u0432\u0442\u043e\u0440\u0441\u043a\u0438\u0435 \u043f\u0440\u0430\u0432\u0430","\u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0432 \u0437\u0430\u0431\u043b\u0443\u0436\u0434\u0435\u043d\u0438\u0435","\u0414\u0440\u0443\u0433\u043e\u0435"];
+            window.__i18nLocale = 'ru_RU';
+        </script>
+
+        
+            <script>
+                /* Hide Android smart banner */
+                window.addEventListener('beforeinstallprompt', function(e) {
+                    e.preventDefault();
+                    return false;
+                });
+            </script>
+
+        
+        <script>
+            (function(window, document, undefined) {
+
+                function DOMReady(onInteractive, onComplete) {
+                    document.onreadystatechange = function() {
+                        var state = document.readyState;
+
+                        if (state === 'interactive' && onInteractive !== undefined) {
+                            onInteractive();
+                        }
+
+                        if (state === 'complete' && onComplete !== undefined) {
+                            onComplete();
+                        }
+                    };
+                }
+
+                function loadSvgSprite( callback ) {
+                    var req = new XMLHttpRequest();
+
+                    req.onload = function (e) {
+                        /**
+                         * Wrap svg element in div to avoid certain bugs (e.g. gradient fills not working)
+                         * @link https://stackoverflow.com/questions/24806913/how-can-i-refer-to-an-internal-gradient-definition-inside-an-svg-sprite-symbol
+                         */
+                        var svgContainer = document.createElement('div');
+                        var svg = document.implementation.createHTMLDocument( '' );
+
+                        svgContainer.style.position = 'absolute';
+                        svgContainer.style.width = 0;
+                        svgContainer.style.height = 0;
+                        svgContainer.style.overflow = 'hidden';
+                        svgContainer.style.zIndex = -9999;
+
+                        svg.body.innerHTML = e.target.response;
+                        svgContainer.appendChild(svg.body.firstElementChild);
+                        document.body.appendChild(svgContainer);
+                        svg = null;
+
+                        if ( callback !== undefined ) {
+                            callback();
+                        }
+                    };
+
+                    req.open('GET', 'https://vc.ru/static/build/vc.ru/symbols.ab5138b8.svg', true);
+
+                    req.responseType = 'text';
+
+                    req.send();
+                }
+
+                DOMReady(function() {
+                    loadSvgSprite( function() {} );
+                }, function() {});
+
+            })(window, document);
+        </script>
+
+        <script>
+            /**
+             * Load different js bundles depends on `module` supporting
+             */
+            (function (scriptTag, es6, es5) {
+                var isSupportsModules = 'noModule' in scriptTag;
+                var isSupportsFeatures = typeof Object.fromEntries === 'function';
+                var isIe = /MSIE|Edge/.test(window.navigator.userAgent);
+                var isSafari13 = typeof BigInt !== 'function'; // Detect Safari 13 through the feature it does not support, e.g. BigInt (related to issue INT-1004)
+
+                if (isSupportsModules && isSupportsFeatures && !isIe && !isSafari13) {
+                    scriptTag.type = 'module';
+                    scriptTag.src = es6;
+                } else {
+                    scriptTag.async = true;
+                    scriptTag.src = es5;
+                }
+
+                scriptTag.crossorigin = 'crossorigin';
+                document.head.appendChild(scriptTag);
+
+            })(document.createElement('script'), 'https://vc.ru/static/build/vc.ru/main.ab5138b8.es6.min.js', 'https://vc.ru/static/build/vc.ru/main.ab5138b8.es5.min.js');
+        </script>
+
+    </body>
+</html>

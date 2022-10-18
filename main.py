@@ -19,7 +19,7 @@ def get_url(url):
 
     soup = BeautifulSoup(src, "lxml")
     posts = soup.find_all(class_="feed__item l-island-round")
-
+    post_data_list = []
     post_urls = []
     for post in posts:
         post_url = post.find("div", class_="content content--short").find("a").get("href")
@@ -28,7 +28,8 @@ def get_url(url):
             post_urls.append(post_url)
     # print(post_urls)
 
-    for post_url in post_urls[0:1]:
+    # post_data_list = []
+    for post_url in post_urls:
         req = requests.get(post_url, headers)
         post_name = post_url.split("/")[-1]
 
@@ -44,14 +45,20 @@ def get_url(url):
             title = soup.find("h1").text
         except Exception:
             title = "Пост не имеет названия"
+        try:
+            entry_content = soup.find("div", class_="l-entry__content").find("p").text
+        except Exception:
+            entry_content = "Пост не имеет описания"
 
-        entry_content = soup.find("div", class_="l-entry__content")
-        post_content = soup.find("div", class_="content content--full ")
-        post_text = soup.find("div", class_="l-island-a")
-        print(post_text)
-
-
-
+        post_data_list.append(
+            {
+                "Заголовок поста": title.strip(),
+                "Описание поста": entry_content,
+                "Ссылка на пост": post_url
+            }
+        )
+    with open("data/posts_data.json", "a", encoding="utf8") as file:
+        json.dump(post_data_list, file, indent=4, ensure_ascii=False)
 
 
 
